@@ -1,0 +1,39 @@
+{
+  "name": "learn-ts-nivo",
+  "version": "1.0.0",
+  "description": "react chart typescript 图表组件",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^3.5.6",
+    "@types/react": "^17.0.36",
+    "jquery": "^3.6.0",
+    "loadsh": "^0.0.4",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-lifecycles-compat": "^3.0.4",
+    "typescript": "^4.4.2",
+    "vite": "^2.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "@types/react-dom": "^17.0.11",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "babel-jest": "^27.3.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest": "^27.3.1",
+    "react-test-renderer": "^17.0.2"
+  }
+}

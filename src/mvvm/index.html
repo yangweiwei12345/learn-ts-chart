@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI</title>
+</head>
+<body>
+  
+  <button style="display: none;" id="showAlert1" onclick="handleKefu()">客服</button>
+  <div id='box' ao-controller="box">
+    <div id='aa-attr' style="background: #a9ea00;width:100px;height:100px;" ao-css-width="w" ao-click='click' ></div>
+    <p id='aa-text'>{{ w }}</p>
+  </div>
+  <!-- <script type="module" src="./src/app.ts"></script>
+  <script src="http://cdn.cspiretech.com/public/@cspire/kefu/cbd-im-sdk-1.0.0.js"></script>
+  <script>
+    let sdk = window.sdk = new CBDIMSDK({
+      appCode: 'test',
+      token: '8c2d8870a3a31a9874cddf3b0b28fc5e',
+      openType: 'page',
+      env: 'development',
+      onReady: () => {
+        console.log('onready')
+
+        document.querySelector('#showAlert1').style.display = 'block';
+      }
+    });
+    const handleKefu = () => {
+      sdk.startChat({
+        kefu_role: 100001,
+        area: '330106000000'
+      })
+    }
+  </script> -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="./src/mvvm/observer.js"></script>
+  <script src="./src/mvvm/core.js"></script>
+  <script type="text/javascript">
+
+    var mm = MVVM.define("box", function(vm) {
+        vm.w = 150;
+        vm.click = function() {
+            vm.w = parseFloat(vm.w) + 10;
+        }
+    })
+
+    // //节点扫描,执行绑定
+    MVVM.scanTag();
+
+    setTimeout(function(){
+        console.log(mm)
+    },100)
+
+
+  </script>
+</body>
+</html>
