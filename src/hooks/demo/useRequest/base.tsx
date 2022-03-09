@@ -15,6 +15,7 @@ function getUsername(): Promise<string> {
 
 export default () => {
   const { data, error, loading, run } = useRequest(getUsername, {
+    loadingDelay: 300,
     manual: true,
     onSuccess: (result, params) => {
       console.log(result, params, 'success')
