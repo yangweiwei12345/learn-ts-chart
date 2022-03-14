@@ -1,0 +1,131 @@
+$--cntWidth: 200px;
+$--cntHeight: 300px;
+
+// 纵向
+@keyframes bubble_y {
+  0% {
+    transform: scale(.3);
+    bottom: 40px;
+    opacity: 0;
+  }
+  10% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(.3);
+    bottom: 200px;
+    opacity: 0.2;
+  }
+}
+
+@keyframes bubble_swing_1 {
+  0% {
+    right: 30px;
+  }
+  25% {
+    right: -10px;
+  }
+  75% {
+    right: 40px;
+  }
+  100% {
+    right: 30px;
+  }
+}
+
+// 任意轨迹
+@keyframes bubble_swing_2 {
+  0% {
+    // 中间
+    right: 30px;
+  }
+  33% {
+    // 最左
+    right: 40px;
+  }
+  100% {
+    // 随机位置
+    right: -10px;
+  }
+}
+
+
+// 简谐反向
+@keyframes bubble_swing_3 {
+  0% {
+    // 中间
+    right: 30px;
+  }
+  25% {
+    // 最右
+    right: -10px;
+  }
+  75% {
+    // 最左
+    right: 40px;
+  }
+  100% {
+    right: 30px;
+  }
+}
+
+// 点赞按钮
+@keyframes bounce-animate {
+  0% {
+    transform: scale(.9);
+  }
+  80% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@for $i from 1 through 3 {
+  @for $j from 1 through 2 {
+    .bl_#{$i}_#{$j} {
+      animation: bubble_swing_#{$i} calc(1.5s + $j * 0.5s) linear 1 forwards,
+        bubble_y calc(1.5s + $j * 0.5s) linear 1 forwards;
+    }
+  }
+}
+
+@for $i from 0 through 7 {
+  .b#{$i} {
+    background-color: #eee;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.like-bubble {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+
+.bounce-click {
+  animation: bounce-animate .3s ease 1 forwards;
+}
+
+#like-bubble-cnt {
+  width: $--cntWidth;
+  height: $--cntHeight;
+  position: relative;
+  background-color: #f6f6f6;
+}
+#like-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #ddd;
+}
