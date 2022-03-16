@@ -1,3 +1,11 @@
+/*
+ * This file is part of the nivo project.
+ *
+ * Copyright 2016-present, Raphaël Benitte.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 export const defaultTheme = {
     background: 'transparent',
     fontFamily: 'sans-serif',
@@ -8,50 +16,50 @@ export const defaultTheme = {
             line: {
                 stroke: 'transparent',
                 strokeWidth: 1,
-            }
+            },
         },
         ticks: {
             line: {
                 stroke: '#777777',
-                strokeWidth: 1
+                strokeWidth: 1,
             },
-            text: {}
+            text: {},
         },
         legend: {
             text: {
-                fontSize: 12
-            }
-        }
+                fontSize: 12,
+            },
+        },
     },
     grid: {
         line: {
             stroke: '#dddddd',
-            strokeWidth: 1
-        }
+            strokeWidth: 1,
+        },
     },
-    legend: {
+    legends: {
         hidden: {
             symbol: {
                 fill: '#333333',
-                opacity: 0.6
+                opacity: 0.6,
             },
             text: {
                 fill: '#333333',
-                opacity: 0.6
-            }
+                opacity: 0.6,
+            },
         },
-        text: {}
+        text: {},
     },
     labels: {
-        text: {}
+        text: {},
     },
     markers: {
         lineColor: '#000000',
         lineStrokeWidth: 1,
-        text: {}
+        text: {},
     },
     dots: {
-        text: {}
+        text: {},
     },
     tooltip: {
         container: {
@@ -60,23 +68,23 @@ export const defaultTheme = {
             fontSize: 'inherit',
             borderRadius: '2px',
             boxShadow: '0 1px 2px rgba(0, 0, 0, 0.25)',
-            padding: '5px 9px'
+            padding: '5px 9px',
         },
         basic: {
             whiteSpace: 'pre',
             display: 'flex',
-            alignItem: 'center'
+            alignItems: 'center',
         },
         chip: {
-            marginRight: 7
+            marginRight: 7,
         },
         table: {},
         tableCell: {
-            padding: '3px 5px'
+            padding: '3px 5px',
         },
         tableCellValue: {
-            fontWeight: 'bold'
-        }
+            fontWeight: 'bold',
+        },
     },
     crosshair: {
         line: {
@@ -111,5 +119,4 @@ export const defaultTheme = {
             outlineColor: '#ffffff',
         },
     },
-
-};
+}
