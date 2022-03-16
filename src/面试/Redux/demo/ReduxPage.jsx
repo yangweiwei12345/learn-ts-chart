@@ -22,6 +22,7 @@ const ReduxPage = () => {
       点击触发dispatch
       <button onClick={() => store.dispatch({ type: 'ADD' })}>增加</button>
       <button onClick={() => {
+        debugger;
         store.dispatch((dispatch, getState) => {
           setTimeout(() => {
             dispatch({ type: 'ADD' })

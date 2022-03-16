@@ -16,6 +16,6 @@ function createReducer(store = 1, { type, payload = 1 }) {
   }
 }
 
-const store = createStore(createReducer, applyMiddleware(thunk, logger));
+const store = createStore(createReducer, applyMiddleware(logger, thunk));
 
 export default store;

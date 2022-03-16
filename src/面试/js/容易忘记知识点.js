@@ -10,7 +10,7 @@ const { property } = require("lodash");
 function news(func) {
   var target = {};    // 创建一个对象
 
-  let constructor = Array.prototype.unshift.call(arguments);
+  let constructor = Array.prototype.shift.call(arguments);
 
   if(typeof constructor !== 'function') {
     console.error('type error');
