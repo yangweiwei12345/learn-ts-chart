@@ -1,7 +1,7 @@
 ## Promise 
 
 ### 1、课外知识
-> 函数对象和实力对象
+> 函数对象和实例对象
 
 
 ### 2、常见的内置错误
@@ -11,7 +11,7 @@
 1、抽象表达
 Promise是js中进行异步编程的新的解决方案
 
-2、具体表单
+2、具体表答
 (1) 从语法上来说Promise是一个构造函数；
 (2) 从功能上来说Promise对象用来封装一个异步操作并可以获取其结果；
 
@@ -23,9 +23,9 @@ Promise是js中进行异步编程的新的解决方案
 
 
 ### 5、为什么使用promise
-1、指定回调函数更灵活：
-  回调函数：必须在异步任务前指定回调函数，不然无法回调；
-  promise：启动异步任务 => 返回promise对象 => 给promise对象绑定回调函数（可以在异步函数结束之后指定回调）
+**1、指定回调函数更灵活：**
+  - 回调函数：必须在异步任务前指定回调函数，不然无法回调；
+  - promise：启动异步任务 => 返回promise对象 => 给promise对象绑定回调函数（可以在异步函数结束之后指定回调）
 
 ```js
 // 成功回调函数
@@ -49,7 +49,7 @@ setTimeout(() => {
 }, 3000);
 ```
 
-2、支持链式调用，解决回调低于问题，不便于阅读和异常处理
+**2、支持链式调用，解决回调地狱问题，不便于阅读和异常处理**
 
 ```js
 /*
@@ -96,7 +96,7 @@ async function request() {
 **2、Promise.prototype.then 方法：(onResolved, onRejected) => {}**
 - onResolved函数： 成功的回调函数 (value) => {}
 - onRejected函数： 失败的回调函数 (reason) => {}
-- 说明：指定用于得到成功value的成功回调和用于得到失败reason的失败回调函数，返回一份promise对象
+- 说明：指定用于得到成功value的成功回调和用于得到失败reason的失败回调函数，返回一个新的promise对象
 
 **3、Promise.prototype.catch方法：(onRejected) => {}**
 - onRejected函数：失败的回调函数 (reason) => {}
@@ -183,13 +183,25 @@ new Promise((resolve, reject) => {
   reason => {
     console.log("onRejected()2", reason)
   }
+).catch(reson => {
+  console.log("onRejected3", reason);
+
+  // 下一个then执行什么方法由这里返回什么决定
+  // return new Promise(() => {})  // 中断promise链
+}).then(
+  value => {
+    console.log("onResolved4", value)
+  },
+  reason => {
+    console.log("onRejected4", reason)
+  }
 )
 ```
 
 **5、promise异常传透**
-1、当使用promise的then链式调用时，可以在最后指定失败的回调；
-2、前面任何操作出了异常，都会传到最后失败的回调中处理；
+- 1、当使用promise的then链式调用时，可以在最后指定失败的回调；
+- 2、前面任何操作出了异常，都会传到最后失败的回调中处理；
 
 **6、中断promise链**
-1、使用promise的then链式调用时，在中间中断，不再调用后面的回调函数；
-2、在回调函数中返回一个pedding状态的promise；
+- 1、使用promise的then链式调用时，在中间中断，不再调用后面的回调函数；
+- 2、在回调函数中返回一个pedding状态的promise；

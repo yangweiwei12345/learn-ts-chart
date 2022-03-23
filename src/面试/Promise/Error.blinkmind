@@ -1,0 +1,262 @@
+{
+  "rootTopicKey": "6fd84cd7-8190-4f39-8935-c33d1e45fdfa",
+  "editorRootTopicKey": "6fd84cd7-8190-4f39-8935-c33d1e45fdfa",
+  "focusKey": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+  "extData": {
+    "TOPIC_REFERENCE": {
+      "reference": {}
+    }
+  },
+  "topics": [
+    {
+      "key": "8f51ca68-13f7-4b7f-9420-aa4c4346adf9",
+      "parentKey": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "RangError"
+        }
+      ]
+    },
+    {
+      "key": "379e72a6-db02-43ef-8377-5d6b98fa4749",
+      "parentKey": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "TypeError"
+        }
+      ]
+    },
+    {
+      "key": "e6db565c-800f-406e-8ac3-db727fb7b482",
+      "parentKey": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "EvalError: 创建一个error实例，表示错误的原因：与eval()相关"
+        }
+      ]
+    },
+    {
+      "key": "d0f284f1-2d22-4ba2-aff0-89d23da75b6b",
+      "parentKey": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "URIError"
+        }
+      ]
+    },
+    {
+      "key": "ccaada25-13ce-42a8-9076-d498fa75435a",
+      "parentKey": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "InteralError: "
+        }
+      ]
+    },
+    {
+      "key": "8fb605c1-033f-460e-ac30-98f76063498e",
+      "parentKey": "6fd84cd7-8190-4f39-8935-c33d1e45fdfa",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "语法: new Error([message[, fileName[, lineNumber]]])"
+        }
+      ]
+    },
+    {
+      "key": "350f54c9-431f-43c5-87a6-f5ed675bab67",
+      "parentKey": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "ReferenceError"
+        }
+      ]
+    },
+    {
+      "key": "83f89d75-9851-4e22-8d2e-195bcd649a7c",
+      "parentKey": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "SyntaxError"
+        }
+      ]
+    },
+    {
+      "key": "6fd84cd7-8190-4f39-8935-c33d1e45fdfa",
+      "parentKey": null,
+      "subKeys": [
+        "fba595e2-0e2a-451e-aae4-b9d5b83e664f",
+        "8fb605c1-033f-460e-ac30-98f76063498e",
+        "f60e18af-d178-4523-8db4-3c0d0cfe8218",
+        "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "JavaScript Error"
+        },
+        {
+          "type": "DESC",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "fba595e2-0e2a-451e-aae4-b9d5b83e664f",
+      "parentKey": "6fd84cd7-8190-4f39-8935-c33d1e45fdfa",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "通过Error的构造函数可以创建一个错误对象"
+        },
+        {
+          "type": "TOPOLOGY",
+          "data": {
+            "nodes": [],
+            "lines": [],
+            "lineName": "curve",
+            "fromArrowType": "",
+            "toArrowType": "triangleSolid",
+            "scale": 1,
+            "locked": 0
+          }
+        },
+        {
+          "type": "DESC",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "f60e18af-d178-4523-8db4-3c0d0cfe8218",
+      "parentKey": "6fd84cd7-8190-4f39-8935-c33d1e45fdfa",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "参数\nmessage: 可选。可阅读的错误描述信息。\nfileName: 可选。被创建的Error对象的fileName属性值，默认是调用Error构造器所在的文件的名字。\nlineNumber: 可选。被创建的Error对象的fileName属性值。默认是调用Error构造器代码所在的文件的行号。"
+        }
+      ]
+    },
+    {
+      "key": "03e6d68e-cb3c-4d5c-9c9c-690c9bb092e0",
+      "parentKey": "6fd84cd7-8190-4f39-8935-c33d1e45fdfa",
+      "subKeys": [
+        "e6db565c-800f-406e-8ac3-db727fb7b482",
+        "ccaada25-13ce-42a8-9076-d498fa75435a",
+        "8f51ca68-13f7-4b7f-9420-aa4c4346adf9",
+        "350f54c9-431f-43c5-87a6-f5ed675bab67",
+        "83f89d75-9851-4e22-8d2e-195bcd649a7c",
+        "379e72a6-db02-43ef-8377-5d6b98fa4749",
+        "d0f284f1-2d22-4ba2-aff0-89d23da75b6b"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "类型"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "readOnly": false,
+    "allowUndo": true,
+    "layoutDir": 0,
+    "theme": {
+      "name": "default",
+      "randomColor": true,
+      "background": "rgb(57,60,65)",
+      "highlightColor": "#50C9CE",
+      "marginH": 60,
+      "marginV": 20,
+      "contentStyle": {
+        "lineHeight": "1.5"
+      },
+      "linkStyle": {
+        "lineRadius": 5,
+        "lineType": "curve",
+        "lineWidth": "3px"
+      },
+      "rootTopic": {
+        "contentStyle": {
+          "fontSize": "34px",
+          "borderRadius": "35px",
+          "padding": "16px 18px 16px 18px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "primaryTopic": {
+        "contentStyle": {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "10px 15px 10px 15px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "normalTopic": {
+        "contentStyle": {
+          "border": "1px solid #e8eaec",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "4px 10px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "white"
+        }
+      }
+    }
+  },
+  "formatVersion": null
+}
